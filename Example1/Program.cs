@@ -61,6 +61,7 @@ class Program
     {
         Random rand = new Random();
         int honestCount = 0;
+        
         Console.WriteLine("Сколько чисел вы хотите ввести?");
         int numberCount = Convert.ToInt32(Console.ReadLine());
         int[] array = new int[numberCount];
