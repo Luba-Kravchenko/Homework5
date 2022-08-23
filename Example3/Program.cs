@@ -1,7 +1,7 @@
 ﻿/* Задайте массив вещественных чисел. 
    Найдите разницу между максимальным и минимальным элементов массива. */
 
-class Program
+/*class Program
 {
     static void WriteArray(double[] array)
     {
@@ -83,5 +83,49 @@ class Program
            
         }
          return max;
+    }
+} */
+
+
+
+class Program                    //Создаём функцию, которая ищет максимальное число
+{
+    static int MaxNumberArray(int[] array)
+
+    {
+        int max = 0;
+        for (int i = 0; i < array.Length; i++)
+        {
+            if (array[i] > max)
+            {
+                max = array[i];
+            }
+            
+        }
+        return max;
+    }
+static int MinNumberArray(int[] array)
+
+    {
+        int min = array[0];
+        for (int i = 0; i < array.Length; i++)
+        {
+            if (array[i] < min)
+            {
+                min = array[i];
+            }
+            
+        }
+        return min;
+    }
+
+    static void Main(string[] args)
+    {
+        int[] array = { 1, 2, 4, 5, 6, 2, 721, 67, 16, 1 };
+        int max = MaxNumberArray(array);
+        int min = MinNumberArray(array);
+        Console.WriteLine(max);
+        Console.WriteLine(min);
+        Console.WriteLine(max - min);
     }
 }
