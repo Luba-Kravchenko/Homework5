@@ -1,7 +1,7 @@
 ﻿/* Задайте массив вещественных чисел. 
    Найдите разницу между максимальным и минимальным элементов массива. */
 
-/*class Program
+class Program
 {
     static void WriteArray(double[] array)
     {
@@ -84,7 +84,7 @@
         }
          return max;
     }
-} */
+} 
 
 
 
